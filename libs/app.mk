@@ -4,74 +4,74 @@
 # the next time 'make getlibs' is run.
 #
 modlibs:
-	(cd PSoC63-firmware-sdk30; make modlibs)
+	(cd firmware-infineon-cy8ckit-062-ble; make modlibs)
 .PHONY: modlibs
 
 library-manager:
-	(cd PSoC63-firmware-sdk30; make library-manager)
+	(cd firmware-infineon-cy8ckit-062-ble; make library-manager)
 .PHONY: library-manager
 
 qspi-configurator:
-	(cd PSoC63-firmware-sdk30; make qspi-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make qspi-configurator)
 .PHONY: qspi-configurator
 
 config:
-	(cd PSoC63-firmware-sdk30; make config)
+	(cd firmware-infineon-cy8ckit-062-ble; make config)
 .PHONY: config
 
 device-configurator:
-	(cd PSoC63-firmware-sdk30; make device-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make device-configurator)
 .PHONY: device-configurator
 
 capsense-configurator:
-	(cd PSoC63-firmware-sdk30; make capsense-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make capsense-configurator)
 .PHONY: capsense-configurator
 
 capsense-tuner:
-	(cd PSoC63-firmware-sdk30; make capsense-tuner)
+	(cd firmware-infineon-cy8ckit-062-ble; make capsense-tuner)
 .PHONY: capsense-tuner
 
 seglcd-configurator:
-	(cd PSoC63-firmware-sdk30; make seglcd-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make seglcd-configurator)
 .PHONY: seglcd-configurator
 
 bsp-assistant:
-	(cd PSoC63-firmware-sdk30; make bsp-assistant)
+	(cd firmware-infineon-cy8ckit-062-ble; make bsp-assistant)
 .PHONY: bsp-assistant
 
 config_bt:
-	(cd PSoC63-firmware-sdk30; make config_bt)
+	(cd firmware-infineon-cy8ckit-062-ble; make config_bt)
 .PHONY: config_bt
 
 bt-configurator:
-	(cd PSoC63-firmware-sdk30; make bt-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make bt-configurator)
 .PHONY: bt-configurator
 
 config_usbdev:
-	(cd PSoC63-firmware-sdk30; make config_usbdev)
+	(cd firmware-infineon-cy8ckit-062-ble; make config_usbdev)
 .PHONY: config_usbdev
 
 usbdev-configurator:
-	(cd PSoC63-firmware-sdk30; make usbdev-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make usbdev-configurator)
 .PHONY: usbdev-configurator
 
 smartio-configurator:
-	(cd PSoC63-firmware-sdk30; make smartio-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make smartio-configurator)
 .PHONY: smartio-configurator
 
 config_ezpd:
-	(cd PSoC63-firmware-sdk30; make config_ezpd)
+	(cd firmware-infineon-cy8ckit-062-ble; make config_ezpd)
 .PHONY: config_ezpd
 
 ez-pd-configurator:
-	(cd PSoC63-firmware-sdk30; make ez-pd-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make ez-pd-configurator)
 .PHONY: ez-pd-configurator
 
 config_lin:
-	(cd PSoC63-firmware-sdk30; make config_lin)
+	(cd firmware-infineon-cy8ckit-062-ble; make config_lin)
 .PHONY: config_lin
 
 lin-configurator:
-	(cd PSoC63-firmware-sdk30; make lin-configurator)
+	(cd firmware-infineon-cy8ckit-062-ble; make lin-configurator)
 .PHONY: lin-configurator
 

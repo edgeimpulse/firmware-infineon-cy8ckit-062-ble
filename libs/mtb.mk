@@ -4,30 +4,44 @@
 # the next time 'make getlibs' is run.
 #
 # List of local libraries
+SEARCH_abstraction-rtos=./libs/abstraction-rtos
 SEARCH_BMI160_driver=./libs/BMI160_driver
+SEARCH_btstack-integration=./libs/btstack-integration
+SEARCH_btstack=./libs/btstack
 SEARCH_cat1cm0p=./libs/cat1cm0p
+SEARCH_clib-support=./libs/clib-support
 SEARCH_cmsis=./libs/cmsis
 SEARCH_core-lib=./libs/core-lib
 SEARCH_core-make=./libs/core-make
+SEARCH_display-eink-e2271cs021=./libs/display-eink-e2271cs021
+SEARCH_emwin=./libs/emwin
+SEARCH_freertos=./libs/freertos
 SEARCH_mtb-hal-cat1=./libs/mtb-hal-cat1
 SEARCH_mtb-pdl-cat1=./libs/mtb-pdl-cat1
 SEARCH_recipe-make-cat1a=./libs/recipe-make-cat1a
+SEARCH_retarget-io=./libs/retarget-io
+SEARCH_sensor-motion-bmi160=./libs/sensor-motion-bmi160
+SEARCH_serial-flash=./libs/serial-flash
 
 
 # Path to the current BSP
 SEARCH_TARGET_APP_CY8CKIT-062-BLE=bsps/TARGET_APP_CY8CKIT-062-BLE
 
 # The search paths for the included middleware
-SEARCH_retarget-io=../mtb_shared/retarget-io/release-v1.4.0
-SEARCH_sensor-motion-bmi160=../mtb_shared/sensor-motion-bmi160/release-v1.1.1
-SEARCH_serial-flash=../mtb_shared/serial-flash/release-v1.3.0
 
 # Search libraries added to build
+SEARCH_MTB_MK+=$(SEARCH_abstraction-rtos)
 SEARCH_MTB_MK+=$(SEARCH_BMI160_driver)
+SEARCH_MTB_MK+=$(SEARCH_btstack-integration)
+SEARCH_MTB_MK+=$(SEARCH_btstack)
 SEARCH_MTB_MK+=$(SEARCH_cat1cm0p)
+SEARCH_MTB_MK+=$(SEARCH_clib-support)
 SEARCH_MTB_MK+=$(SEARCH_cmsis)
 SEARCH_MTB_MK+=$(SEARCH_core-lib)
 SEARCH_MTB_MK+=$(SEARCH_core-make)
+SEARCH_MTB_MK+=$(SEARCH_display-eink-e2271cs021)
+SEARCH_MTB_MK+=$(SEARCH_emwin)
+SEARCH_MTB_MK+=$(SEARCH_freertos)
 SEARCH_MTB_MK+=$(SEARCH_mtb-hal-cat1)
 SEARCH_MTB_MK+=$(SEARCH_mtb-pdl-cat1)
 SEARCH_MTB_MK+=$(SEARCH_recipe-make-cat1a)
@@ -36,11 +50,18 @@ SEARCH_MTB_MK+=$(SEARCH_sensor-motion-bmi160)
 SEARCH_MTB_MK+=$(SEARCH_serial-flash)
 
 -include $(CY_INTERNAL_APP_PATH)/importedbsp.mk
+COMPONENTS += MW_ABSTRACTION_RTOS
 COMPONENTS += MW_BMI160_DRIVER
+COMPONENTS += MW_BTSTACK_INTEGRATION
+COMPONENTS += MW_BTSTACK
 COMPONENTS += MW_CAT1CM0P
+COMPONENTS += MW_CLIB_SUPPORT
 COMPONENTS += MW_CMSIS
 COMPONENTS += MW_CORE_LIB
 COMPONENTS += MW_CORE_MAKE
+COMPONENTS += MW_DISPLAY_EINK_E2271CS021
+COMPONENTS += MW_EMWIN
+COMPONENTS += MW_FREERTOS
 COMPONENTS += MW_MTB_HAL_CAT1
 COMPONENTS += MW_MTB_PDL_CAT1
 COMPONENTS += MW_RECIPE_MAKE_CAT1A

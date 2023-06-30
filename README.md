@@ -13,6 +13,9 @@ This project supports:
   * Sensor Fusion using Inertial and Environmental sensor together
 * Storing samples on the external NOR Flash using the QSPI inteface
 
+TODO:
+* Migrate from shared MTB to local (All libraries must be provided in this code repository)
+
 Project dependencies:
 * PSoC6 io_retarget library for UART interface
 * PSoC6 serial-flash library for QSPI interface
@@ -47,6 +50,8 @@ Project dependencies:
     ```
 
 ### Docker
+
+## TODO: Docker image not available yet
 
 1. Build docker image
 
