@@ -202,9 +202,8 @@ EiDevicePSoC62::EiDevicePSoC62(EiDeviceMemory* mem)
 
     sensors[EI_STANDALONE_SENSOR_MIC].name = "Microphone";
     sensors[EI_STANDALONE_SENSOR_MIC].start_sampling_cb = ei_microphone_sample_start;
-    sensors[EI_STANDALONE_SENSOR_MIC].frequencies[0] = 8000.0f;
-    sensors[EI_STANDALONE_SENSOR_MIC].frequencies[1] = 16000.0f;
-    sensors[EI_STANDALONE_SENSOR_MIC].frequencies[2] = 32000.0f;
+    sensors[EI_STANDALONE_SENSOR_MIC].frequencies[0] = 16000.0f;
+    sensors[EI_STANDALONE_SENSOR_MIC].frequencies[1] = 32000.0f;
     sensors[EI_STANDALONE_SENSOR_MIC].max_sample_length_s = mem->get_available_sample_bytes() / (sensors[EI_STANDALONE_SENSOR_MIC].frequencies[0] * 2);
 }
 
