@@ -16,6 +16,7 @@
 
 #include "edge-impulse-sdk/porting/ei_classifier_porting.h"
 #include "ei_flash_memory.h"
+#include <cmath>
 
 /******
  *

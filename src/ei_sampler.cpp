@@ -21,7 +21,7 @@
 #include "firmware-sdk/ei_device_info_lib.h"
 #include "firmware-sdk/ei_device_memory.h"
 #include "firmware-sdk/ei_config_types.h"
-#include "firmware-sdk/sensor_aq.h"
+#include "firmware-sdk/sensor-aq/sensor_aq.h"
 #include "sensor_aq_mbedtls/sensor_aq_mbedtls_hs256.h"
 #include "ei_sampler.h"
 

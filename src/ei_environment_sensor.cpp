@@ -22,6 +22,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <cmath>
 
 #include "cy_pdl.h"
 #include "cyhal.h"

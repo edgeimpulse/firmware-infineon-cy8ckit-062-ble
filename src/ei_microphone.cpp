@@ -22,10 +22,10 @@
 
 #include "edge-impulse-sdk/porting/ei_classifier_porting.h"
 #include "edge-impulse-sdk/dsp/numpy.hpp"
-#include "firmware-sdk/sensor_aq.h"
+#include "firmware-sdk/sensor-aq/sensor_aq.h"
 #include "ei_device_psoc62.h"
 #include "ei_microphone.h"
-#include "sensor_aq_none.h"
+#include "firmware-sdk/sensor-aq/sensor_aq_none.h"
 #include "sensor_aq_mbedtls_hs256.h"
 #include "cy_pdl.h"
 #include "cyhal.h"
